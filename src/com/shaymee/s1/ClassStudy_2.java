@@ -89,9 +89,10 @@ public class ClassStudy_2 {
 					input=true;
 				}
 			}			
-			System.out.println("이름\t번호\t국어\t영어\t수학\t총점\t평균"); 
-			System.out.println("=====================================================================");
+			
 				if(input) {
+					System.out.println("이름\t번호\t국어\t영어\t수학\t총점\t평균"); 
+					System.out.println("=====================================================================");
 					for(int i=stNo;i<stNo+1;i++) {
 					System.out.print(students[i].name+"\t");
 					System.out.print(students[i].num+"\t");
