@@ -110,7 +110,7 @@ public class Ex1Main {
 		
 		
 		
-		System.out.println("== fin. ==");
+		System.out.println("=== fin. ===");
 
 	}
 

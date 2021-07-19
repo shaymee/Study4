@@ -81,30 +81,33 @@ public class ClassStudy_2 {
 		} else if(select==2) { 						//2.학생번호 검색버튼
 			System.out.println("==학생번호 입력==");
 			int stNo = sc.nextInt(); 				//입력한 학생번호
-			stNo = stNo-1; 							//index는 0부터 시작하므로 입력값-1
+			int index = 0; 							//해당 번호를 가진 학생의 index값 추출을 위한 변수 선언
 			boolean input = false;
 			
 			for(int i=0;i<students.length;i++) {
-				if(stNo==i) {
-					input=true;
+				if(students[i].num == stNo) {
+					index = i;
+					input = true;
 				}
 			}			
 			
 				if(input) {
 					System.out.println("이름\t번호\t국어\t영어\t수학\t총점\t평균"); 
 					System.out.println("=====================================================================");
-					for(int i=stNo;i<stNo+1;i++) {
-					System.out.print(students[i].name+"\t");
-					System.out.print(students[i].num+"\t");
-					System.out.print(students[i].kor+"\t");
-					System.out.print(students[i].eng+"\t");
-					System.out.print(students[i].math+"\t");
-					System.out.print(students[i].total+"\t");
-					System.out.println(students[i].avg+"\t");
-					System.out.println("----------------------------------------------------------");
+					for(int i=0;i<students.length;i++) {
+						if(i==index) {
+						System.out.print(students[i].name+"\t");
+						System.out.print(students[i].num+"\t");
+						System.out.print(students[i].kor+"\t");
+						System.out.print(students[i].eng+"\t");
+						System.out.print(students[i].math+"\t");
+						System.out.print(students[i].total+"\t");
+						System.out.println(students[i].avg+"\t");
+						System.out.println("----------------------------------------------------------");
 		
 					check=false;
 					break;		
+						}
 					}
 					
 				} else {
