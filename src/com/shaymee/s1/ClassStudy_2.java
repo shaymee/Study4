@@ -74,14 +74,14 @@ public class ClassStudy_2 {
 		System.out.println("5.프로그램 종료");
 		int select = sc.nextInt();
 		
-		if(select==1) {
+		if(select==1) { 							//1.전체정보 출력버튼
 			check=true;
 			continue;
 			
-		} else if(select==2) {
+		} else if(select==2) { 						//2.학생번호 검색버튼
 			System.out.println("==학생번호 입력==");
-			int stNo = sc.nextInt();
-			stNo = stNo-1;
+			int stNo = sc.nextInt(); 				//입력한 학생번호
+			stNo = stNo-1; 							//index는 0부터 시작하므로 입력값-1
 			boolean input = false;
 			
 			for(int i=0;i<students.length;i++) {
@@ -113,10 +113,10 @@ public class ClassStudy_2 {
 					
 				}
 
-		} else if(select==3) {
-			students2 = new Student[students.length+1];
+		} else if(select==3) {								 //3.학생정보 추가버튼
+			students2 = new Student[students.length+1];		//복사할 배열생성
 			for(int i=0;i<students.length;i++) {
-				students2[i]=students[i];
+				students2[i]=students[i];			
 			}
 			
 			for(int i=students.length;i<students.length+1;i++) {
@@ -141,7 +141,7 @@ public class ClassStudy_2 {
 			break;
 			}
 			
-		} else if(select==4) {
+		} else if(select==4) { 							//4.평균성적순 정렬(내림차순)
 			for(int idx=0;idx<students.length-1;idx++) {
 				for(int i=idx+1;i<students.length;i++) {
 					if(students[idx].avg < students[i].avg) {
