@@ -178,7 +178,7 @@ public class ClassStudy_2 {
 		}
 
 		
-		System.out.println("== fin. ==");
+		System.out.println("=== fin. ===");
 	}
 
 }
