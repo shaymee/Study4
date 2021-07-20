@@ -23,7 +23,7 @@ public class StudentView {
 
 	
 	
-	public void viewOne(Student student) {	//선택번호 출력 메소드
+	public void viewOne(Student student) {	// 선택번호 출력 메소드
 				System.out.println("이름\t번호\t국어\t영어\t수학\t총점\t평균"); 
 				System.out.println("=====================================================================");
 					System.out.print(student.name+"\t");
