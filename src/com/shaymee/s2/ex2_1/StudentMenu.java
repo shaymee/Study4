@@ -43,7 +43,7 @@ public class StudentMenu {
 				continue;
 				
 			} else if(select==2) {
-				System.out.println("==검색희망학생 번호 입력==");
+				System.out.println("==검색할 학생 번호 입력==");
 				int choice = sc.nextInt();
 				
 				Student student = null;
