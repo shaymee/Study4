@@ -6,7 +6,7 @@ public class Ex2Main {
 		
 		StudentMenu sm = new StudentMenu(); // 일단 참조변수명이 sm인 객체 생성
 		
-		sm.studentMenu();
+		sm.studentMenu(); // 참조변수명.인스턴스메서드명();
 		
 		
 
