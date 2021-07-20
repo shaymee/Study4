@@ -26,7 +26,7 @@ public class StudentInput {
 	}
 
 
-	public Student[] addArray(Student[] students) {		//추가된 학생 정보입력 메소드
+	public Student[] addArray(Student[] students) {		// 추가된 학생 정보입력 메소드
 
 		Student[] students2 = new Student[students.length+1];
 		
